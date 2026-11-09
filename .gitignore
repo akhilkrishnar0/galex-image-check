@@ -1,0 +1,7 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+downloaded_galex/
+galex_image_check_results/
+.pytest_cache/

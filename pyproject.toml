@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "galex-image-check"
+version = "0.1.0"
+description = "GALEX field-edge and invalid-pixel screening before stacking"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "astropy", "matplotlib"]
+[project.urls]
+Repository = "https://github.com/akhilkrishnar0/galex-image-check"
+[project.scripts]
+galex-image-check = "galex_image_check.__main__:main"
+[tool.setuptools]
+packages = ["galex_image_check"]
