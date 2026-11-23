@@ -13,7 +13,7 @@ from astropy.wcs.utils import proj_plane_pixel_scales
 class CheckConfig:
     radius_arcmin: float=2.5
     plot_arcmin: float=3.0
-    min_coverage: float=95
+    min_coverage: float=0.99
     zero_is_invalid: bool=True
     def __post_init__(self):
         if not np.isfinite([self.radius_arcmin,self.plot_arcmin,self.min_coverage]).all():
